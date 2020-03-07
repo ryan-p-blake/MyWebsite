@@ -1,0 +1,359 @@
+* {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #222;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* ----- HEADINGS ----- */
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #eee;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #333;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+header {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(img/space3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    background-attachment: fixed;
+    background-position: 0 -200;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -200%);
+}
+
+.logo {
+    height: 175px;
+    width: auto;
+    float: left;
+    margin-top: 0px;
+}
+
+.logo-black { 
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+/* Main navi */
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #eee;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #ffffff;
+}
+
+
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #eee;
+}
+
+
+/* Sticky navi */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
+
+
+
+/* ----------------------------------------------- */
+/* PROJECTS SECTION */
+/* ----------------------------------------------- */
+
+.section-steps {
+    background-color: #ddd;
+    background-image:linear-gradient(rgb(212, 212, 212), rgba(212, 212, 212, 0.9)), url(img/space.jpg);
+}
+
+.steps-box {
+    margin-top: 30px;
+}
+
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+}
+
+.steps-box:last-child {
+    text-align: left;
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-step div {
+    color: #fff;
+    font-size: 150%;
+    height: 54px;
+    width: 54px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+    float: left;
+    padding: 5px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+    background-image:linear-gradient(#585858, rgba(0, 0, 0, 0.9)), url(img/space.jpg);
+    background-color: #333;
+    padding: 60px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #eee;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-me-para {
+    line-height: 2;
+    background-image: linear-gradient(rgb(227, 227, 227), rgba(212, 212, 212, 0.8)), url(img/space.jpg);
+    color: #333;
+    padding: 50 500 50 500;
+
+}
+
+.span-1-of-2 {
+    
+}
+
+.sluge_img {
+    width: 100px;
+    height: 100px;
+}
+
+.sludge_img {
+    padding: 10px;
+    width: 500px;
+    
+}
+
+.resume {
+    background-position: top;
+    height: 45vh;
+}
+
+.col {
+    box-sizing: border-box;
+}
+
+.hero-text-box-resume {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -300%);
+}
