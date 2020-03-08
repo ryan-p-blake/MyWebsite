@@ -208,6 +208,7 @@ header {
 .section-steps {
     background-color: #ddd;
     background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, .9)), url(img/space.jpg);
+    padding-bottom: 50px;
 
 }
 
@@ -339,7 +340,8 @@ footer p {
 
 }
 
-.span-1-of-2 {}
+.span-1-of-2 {
+}
 
 .sluge_img {
     width: 100px;
@@ -368,7 +370,7 @@ footer p {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -300%);
+    transform: translate(-50%, -200%);
 }
 
 .resume-contents {
@@ -386,16 +388,19 @@ footer p {
 }
 
 .me-img {
-    width: 50%;
+    display: inline-block;
+    width: 45%;
+    height: auto;
     float: left;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-    padding-left: 10px;
-    padding-right: 50px;
-    padding-top: 100px;
+    transform: rotate(90deg) translateX(40px);
+
+    padding-left: 1vh;
+    padding-right: 5vh;
+    padding-top: 10vh;
 
 
 
@@ -420,4 +425,22 @@ footer p {
 .downloadLink {
     text-decoration: none;
     color: white;
+}
+
+.clearfi {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.imgclass {
+    text-align: justify-all;
+
+}
+
+.index {
+    height: 75vh;
+}
+
+.footer {
+    position: static;
 }
