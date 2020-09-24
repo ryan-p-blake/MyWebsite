@@ -35,10 +35,11 @@ body {
 .row {
     max-width: 95%;
     margin: 0 auto;
+    
 }
 
 section {
-    padding: 60px 0;
+    padding: 55px 0;
 }
 
 .box {
@@ -91,13 +92,12 @@ h2:after {
 /* ----------------------------------------------- */
 
 header {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(img/space3.jpg);
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     height: 75vh;
     background-attachment: fixed;
-    background-position: 0 -200;
+    background-position: 0 -150;
 }
 
 .hero-text-box {
@@ -389,14 +389,16 @@ footer p {
 
 .me-img {
     display: inline-block;
-    width: 45%;
+    width: 25%;
     height: auto;
     float: left;
+/*
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg) translateX(40px);
+*/
 
     padding-left: 1vh;
     padding-right: 5vh;
@@ -443,4 +445,43 @@ footer p {
 
 .footer {
     position: static;
+}
+
+.js {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+    margin-bottom: 10%;
+}
+
+.img-2 {
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.jsclsas {
+    
+}
+
+.iframe {
+    margin: 0 auto;
+    display: block;
+}
+
+.shooter {
+    text-align: center;
+}
+
+.footer-p {
+    text-align: center;
 }
