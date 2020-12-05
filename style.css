@@ -31,17 +31,6 @@ body {
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
 
-.frame {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  border: 0 none;
-  box-sizing: border-box;
-}
-
 .row {
     max-width: 95%;
     margin: 0 auto;
@@ -83,7 +72,7 @@ h2 {
 
 h3 {
     font-weight: bold;
-    font-size: 110%;
+    font-size: 125%;
     margin-bottom: 15px;
 }
 
@@ -516,5 +505,5 @@ display: block;
 }
 
 .youtube {
-    
+    margin: 5vh;
 }
