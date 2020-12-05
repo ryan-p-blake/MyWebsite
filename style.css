@@ -467,7 +467,9 @@ footer p {
 display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
+  width: 65vh;
+    float: left;
+    padding: 5vh
 }
 
 .jsclsas {
