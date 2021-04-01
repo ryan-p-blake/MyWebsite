@@ -2,6 +2,7 @@
     line-height: 1.5;
     margin: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 html,
@@ -436,7 +437,7 @@ footer p {
 
 .imgclass {
     text-align: justify-all;
-
+    
 }
 
 .index {
@@ -444,7 +445,7 @@ footer p {
 }
 
 .footer {
-    position: static;
+    position: relative;
 }
 
 .js {
@@ -506,4 +507,8 @@ display: block;
 
 .youtube {
     margin: 5vh;
+}
+
+.imgclass {
+    
 }
